@@ -25,7 +25,7 @@ const ReviewCard = ({image, name, role}: Props) => {
           <div className=" p-3 flex items-center justify-center">
             <Avatar>
               <AvatarImage src={image} alt="@shadcn" />
-              <AvatarFallback>CN</AvatarFallback>
+              <AvatarFallback className="text-gray-300 uppercase">{name}</AvatarFallback>
             </Avatar>
           </div>
             

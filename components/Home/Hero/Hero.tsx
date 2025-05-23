@@ -34,7 +34,7 @@ const Hero = () => {
 
         } catch (error:unknown) {
             if(axios.isAxiosError(error) && error.response){
-            toast.error('An unexpected error occurred')
+            toast.error('เกิดข้อผิดพลาดในการดาวน์โหลดภาพ!')
             }
         } finally {
             setLoading(false)
@@ -79,7 +79,7 @@ const Hero = () => {
                 <Button 
                     onClick={handleImageGeneration}
                     variant={'default'} 
-                    className="bg-blue-700 border-2 ml-18 rounded-lg"
+                    className="bg-blue-700 hover:bg-[#06b6d4] border-2 ml-18 rounded-lg"
                 > Generate </Button>
             </div>
             
