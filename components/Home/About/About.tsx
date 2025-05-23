@@ -2,11 +2,15 @@ import Image from "next/image"
 
 const About = () => {
   return (
-    <div className="py-16">
-      <h1 className="ps-14 sm:px-28 text-2xl sm:text-3xl pb-4 text-white font-bold">เกี่ยวกับ</h1>
+    <div id="about" className="py-16">
+      <h1 className="pt-8 ps-14 sm:px-28 text-2xl sm:text-3xl pb-8 text-white font-bold">เกี่ยวกับ</h1>
       
       <div className="w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-        <div className="order-2 md:order-1 p-2">
+        <div 
+          className="order-2 md:order-1 p-2"
+          data-aos='zoom-in'
+          data-aos-anchor-placement='top-center'
+        >
           <Image 
             src={`/images/ai.jpg`}
             alt="about image"

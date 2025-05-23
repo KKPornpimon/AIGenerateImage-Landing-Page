@@ -1,8 +1,8 @@
 const Footer = () => {
   return (
-    <footer  className="py-16 bg-black">
+    <footer id="contact"  className="py-16 bg-black">
         <div className="w-[80%] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10
-            items-start pb-8 border-b-2 border-gray-900 space-y-6 sm:space-y-0
+            items-start pb-8 pt-8 border-b-2 border-gray-900 space-y-6 sm:space-y-0
         ">
             <div className="col-span-2">
                 <p className="text-2xl sm:text-3xl md:text-4xl text-white w-[80%] font-bold">

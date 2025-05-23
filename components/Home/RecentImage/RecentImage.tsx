@@ -3,7 +3,7 @@ import ImageSlider from "./ImageSlider"
 
 const RecentImageSlide = () => {
   return (
-    <div className="py-16 bg-gray-950">
+    <div id="recent" className="py-16 bg-gray-950">
         {/* Heading */}
         <SectionHeading heading='สำรวจภาพล่าสุดของฉัน' />
         {/* Slider */}

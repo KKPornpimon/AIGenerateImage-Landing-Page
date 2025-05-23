@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+:root {
+    --hoverColor: #06b6d4;
+}
+
 .tag-btn {
     @apply text-black bg-white
 }

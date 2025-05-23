@@ -50,15 +50,18 @@ const Hero = () => {
     }
 
   return (
-    <div className="w-[80%] min-h-screen relative mx-auto mt-[18vh] sm:mt-[20vh]">
+    <div id="hero" className="w-[80%] min-h-screen relative mx-auto mt-[25vh]">
         <div className="relative z-10 text-white flex flex-col items-center justify-center">
-            <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-center
+            <h1 data-aos='fade-up' className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-center
                 bg-gradient-to-r from-orange-300 to-cyan-500 bg-clip-text text-transparent py-2
             ">
-                สร้างภาพสวยๆด้วย 
+                สร้างภาพสวยด้วย 
                 AI{' '}
             </h1>
-            <p className="mt-3 text-sm md:text-base font-semibold text-center text-gray-300">
+            <p 
+                data-aos='fade-up'
+                data-aos-delay='400'
+                className="mt-3 text-sm md:text-base font-semibold text-center text-gray-300">
                 เริ่มต้นใช้งานเครื่องมือสร้างภาพที่ขับเคลื่อนด้วย AI ของฉัน
             </p>
 
@@ -79,7 +82,7 @@ const Hero = () => {
                 <Button 
                     onClick={handleImageGeneration}
                     variant={'default'} 
-                    className="bg-blue-700 hover:bg-[#06b6d4] border-2 ml-18 rounded-lg"
+                    className="bg-blue-700 hover:bg-[var(--hoverColor)] border-2 ml-18 rounded-lg"
                 > Generate </Button>
             </div>
             

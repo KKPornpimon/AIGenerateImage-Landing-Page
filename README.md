@@ -48,3 +48,9 @@ https://rapidapi.com/hub
 npm i react-multi-carousel
 https://www.junia.ai/react-multi-carousel
 
+ติดตั้ง aos (animation)
+Github for install ::  https://github.com/michalsnik/aos 
+Website ::  https://michalsnik.github.io/aos/
+
+
+

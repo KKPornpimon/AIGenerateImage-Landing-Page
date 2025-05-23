@@ -28,8 +28,9 @@ const MobileNav = ({showNav, closeNav}: Props) => {
               href={item.url}
             >
               <p className="
-                text-white w-fit text-xl ml-12
+                text-white w-fit text-3xl ml-[35%] my-1
                 border-b-[1.5px] pb-1 border-white sm:text-[30px]
+                hover:text-[var(--hoverColor)]
               ">
                 {item.label}
               </p>
@@ -41,7 +42,7 @@ const MobileNav = ({showNav, closeNav}: Props) => {
       {/* Close Icon */}
       <XIcon 
         onClick={closeNav}
-        className="absolute top-[0.7rem] right-[1.4rem] w-6 h-6 sm:w-8 sm:h-8"
+        className="absolute top-[0.7rem] right-[1.4rem] w-6 h-6 sm:w-8 sm:h-8 cursor-pointer"
       />
       
     </div>

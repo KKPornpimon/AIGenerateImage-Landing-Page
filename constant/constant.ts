@@ -1,22 +1,22 @@
 export const Navlinks = [
     {
         id: 1,
-        url: '#',
+        url: '#hero',
         label: 'หน้าแรก',
     },
     {
         id: 2,
-        url: '#',
+        url: '#recent',
         label: 'รูปภาพ',
     },
     {
         id: 3,
-        url: '#',
-        label: 'บล็อก',
+        url: '#about',
+        label: 'เกี่ยวกับ',
     },
     {
         id: 4,
-        url: '#',
-        label: 'ปักตะกร้า',
+        url: '#contact',
+        label: 'ติดต่อ',
     },
 ]

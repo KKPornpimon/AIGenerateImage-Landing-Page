@@ -38,14 +38,17 @@ const Nav = ({openNav}: Props) => {
     `}>
 
         {/* Logo */}
-        <h1 className="
-            md:text-3xl sm:text-2xl text-[18px] text-white 
-            font-bold 
-            ml-8
-            md:ml-16
-        ">
-            Kanomsmile29
-        </h1>
+        <Link href={'/'}>
+            <h1 className="
+                md:text-3xl sm:text-2xl text-[18px] text-white 
+                font-bold 
+                ml-8
+                md:ml-16
+            ">
+                Kanomsmile29
+            </h1>
+        </Link>
+        
 
         {/* Navlink */}
         <div className="md:flex items-center space-x-10 hidden">
