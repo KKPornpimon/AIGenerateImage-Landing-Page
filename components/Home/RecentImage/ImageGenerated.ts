@@ -22,7 +22,7 @@ export const GenImage = [
     },
     {
         id: 6,
-        image: '/images/ai5.jpg'
+        image: '/images/ai5.png'
     },
 
 ]

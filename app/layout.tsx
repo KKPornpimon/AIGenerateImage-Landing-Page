@@ -9,10 +9,10 @@ const k2d = K2D({
   subsets: ["latin"]
 })
 
-const poppins = Poppins({
-  weight: "400",
-  subsets: ["latin"]
-})
+// const poppins = Poppins({
+//   weight: "400",
+//   subsets: ["latin"]
+// })
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -38,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` ${k2d.className} ${poppins.className}  bg-gray-900`}
+        className={` ${k2d.className}  bg-gray-900`}
       >
         <ResponsiveNav />
         {children}

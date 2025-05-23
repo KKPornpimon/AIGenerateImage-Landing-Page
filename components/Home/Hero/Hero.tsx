@@ -50,7 +50,7 @@ const Hero = () => {
     }
 
   return (
-    <div className="w-[95%] min-h-screen relative mx-auto mt-[20vh]">
+    <div className="w-[80%] min-h-screen relative mx-auto mt-[18vh] sm:mt-[20vh]">
         <div className="relative z-10 text-white flex flex-col items-center justify-center">
             <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-center
                 bg-gradient-to-r from-orange-300 to-cyan-500 bg-clip-text text-transparent py-2
@@ -79,8 +79,7 @@ const Hero = () => {
                 <Button 
                     onClick={handleImageGeneration}
                     variant={'default'} 
-                    size={'lg'}
-                    className="bg-blue-700 border-2 ml-20"
+                    className="bg-blue-700 border-2 ml-18 rounded-lg"
                 > Generate </Button>
             </div>
             
