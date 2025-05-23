@@ -1,5 +1,6 @@
 import About from "./About/About"
 import Faq from "./Faq/Faq"
+import Footer from "./Footer/Footer"
 import Hero from "./Hero/Hero"
 import RecentImageSlide from "./RecentImage/RecentImage"
 import Review from "./Review/Review"
@@ -14,6 +15,7 @@ const Home = () => {
         <About />
         <Review />
         <Faq />
+        <Footer />
     </div>
   )
 }
