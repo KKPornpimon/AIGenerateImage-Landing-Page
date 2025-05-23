@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tag-btn {
+    @apply text-black bg-white
+}
+
+
