@@ -45,7 +45,7 @@ const Hero = () => {
         const link = document.createElement('a')
             link.target = '_blank'
             link.href = image
-            link.download = 'kanomsmile29-generated-img-ai.jpg'
+            link.download = 'kanomsmile29-ai-generate-image.jpg'
             link.click()
     }
 
