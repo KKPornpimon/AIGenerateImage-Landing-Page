@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button"
 import axios from "axios"
 import { Loader } from "lucide-react"
+import Image from "next/image"
 import { useState } from "react"
 import { toast } from "sonner"
 
@@ -104,9 +105,11 @@ const Hero = () => {
             {
                 image && (
                     <div className="mt-8 flex flex-col items-center">
-                        <img 
+                        <Image 
                             src={image} 
                             alt="ai image"
+                            width={500}
+                            height={500}
                             className="max-w-full h-[500px] rounded-lg shadow-lg"
                             loading='lazy'
                         />
