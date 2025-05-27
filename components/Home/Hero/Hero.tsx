@@ -27,7 +27,7 @@ const Hero = () => {
                 'Content-Type': 'application/x-www-form-urlencoded'
             },
             data: {
-                inputs: prompt
+                input: prompt
             }
         };
           
@@ -111,13 +111,14 @@ const Hero = () => {
             {
                 image && (
                     <div className="mt-8 flex flex-col items-center">
-                        <img 
+                        <Image 
                             src={image} 
                             alt="ai image"
                             width={500}
                             height={500}
                             className="max-w-full h-full rounded-lg shadow-lg object-cover"
                             loading='lazy'
+                            priority={true}
                         />
                         <Button 
                             onClick={handleDownloadImage}
