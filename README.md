@@ -37,7 +37,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 
 =====================================================================
-ติดตั้ง Rapid API (สำหรับ gen AI)
+ติดตั้ง Rapid API (สำหรับ gen AI) (** By Bilal Azam)
 https://rapidapi.com/hub
 คำค้นหา => text to image
 - เมื่อเลือกได้แล้ว ให้สังเกตุ tap ทางขวา จากนั้นเลือก target : Javascript , Client : Axios
@@ -52,5 +52,8 @@ https://www.junia.ai/react-multi-carousel
 Github for install ::  https://github.com/michalsnik/aos 
 Website ::  https://michalsnik.github.io/aos/
 
-
+วิธีลบ node_modules และ package-lock.json บน Windows
+rd /s /q node_modules
+del package-lock.json
+npm install
 

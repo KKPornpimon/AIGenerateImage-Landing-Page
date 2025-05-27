@@ -9,27 +9,32 @@ import { toast } from "sonner"
 
 const Hero = () => {
 
-    const [promt, setPromt] = useState('')
+    const [prompt, setPrompt] = useState('')
     const [image, setImage] = useState('')
     const [loading, setLoading] = useState(false)
 
+
     const handleImageGeneration = async () => {
         setLoading(true)
+
+        
         const options = {
             method: 'POST',
-            url: 'https://ai-text-to-image-generator-api.p.rapidapi.com/realistic',
+            url: 'https://ai-text-to-image-generator-flux-free-api.p.rapidapi.com/aaaaaaaaaaaaaaaaaiimagegenerator/fluximagegenerate/generateimage.php',
             headers: {
-              'x-rapidapi-key': 'e336f18f3fmsh9c26eedd402dd5ep149b8ejsn2bbee906d040',
-              'x-rapidapi-host': 'ai-text-to-image-generator-api.p.rapidapi.com',
-              'Content-Type': 'application/json'
+                'x-rapidapi-key': 'e336f18f3fmsh9c26eedd402dd5ep149b8ejsn2bbee906d040',
+                'x-rapidapi-host': 'ai-text-to-image-generator-flux-free-api.p.rapidapi.com',
+                'Content-Type': 'application/x-www-form-urlencoded'
             },
             data: {
-              inputs: promt
+                inputs: prompt
             }
         };
           
         try {
             const response = await axios.request(options);
+            console.log("Image Response: ", response.data)
+
             setImage(response?.data.url)
             toast.success('สร้างภาพสำเร็จ')
 
@@ -40,13 +45,14 @@ const Hero = () => {
         } finally {
             setLoading(false)
         }
+        setPrompt('')
     }
 
     const handleDownloadImage = () => {
         const link = document.createElement('a')
             link.target = '_blank'
             link.href = image
-            link.download = 'kanomsmile29-ai-generate-image.jpg'
+            link.download = 'kanomsmile29-ai-gen-image.jpg'
             link.click()
     }
 
@@ -77,8 +83,8 @@ const Hero = () => {
                     className="h-full rounded-lg outline-none w-full
                     text-black block flex-1 placeholder:text-xs sm:placeholder:text-base
                     "
-                    value={promt}
-                    onChange={(e) => setPromt(e.target.value) }
+                    value={prompt}
+                    onChange={(e) => setPrompt(e.target.value) }
                 />
                 <Button 
                     onClick={handleImageGeneration}
@@ -105,12 +111,12 @@ const Hero = () => {
             {
                 image && (
                     <div className="mt-8 flex flex-col items-center">
-                        <Image 
+                        <img 
                             src={image} 
                             alt="ai image"
                             width={500}
                             height={500}
-                            className="max-w-full h-[500px] rounded-lg shadow-lg"
+                            className="max-w-full h-full rounded-lg shadow-lg object-cover"
                             loading='lazy'
                         />
                         <Button 

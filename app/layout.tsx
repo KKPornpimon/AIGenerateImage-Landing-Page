@@ -11,9 +11,22 @@ const k2d = K2D({
 
 
 export const metadata: Metadata = {
-  title: "AI Image Genaration",
-  description: "AI Image Generation using next.js 15, Tailwind CSS",
-  keywords: "AI, AI Generation, AI Generate, AI Generate Images, สร้างภาพด้วย AI, Next.js 15, Tailwind CSS,"
+  metadataBase: new URL('http://localhost:3000'),
+  title: "AI Generate Image",
+  description: "AI Image Generative using next.js 15, Tailwind CSS, AI Generate from text to image",
+  keywords: "AI, AI Generate, AI Generate Images, สร้างภาพด้วย AI, Next.js 15, Tailwind CSS, AI Generate from text to image",
+  openGraph: {
+    title: 'AI Generate Image',
+    description: "AI Generate from text to image",
+    images: [
+      {
+        url: '/images/ai-gen-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'AI generated image',
+      },
+    ]
+  }
 };
 
 export default function RootLayout({
